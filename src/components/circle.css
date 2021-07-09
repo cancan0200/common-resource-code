@@ -1,0 +1,72 @@
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid red;    
+    position: relative;
+  }
+
+  .left {
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    border-radius: 40px 0 0 40px;
+  }
+
+  .right {
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 40px 40px 0;
+  }
+
+  body {
+    font-family: "微软雅黑";
+  }
+.circle {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 50%;
+  background: #0cc;
+}
+.pie_left, .pie_right {
+  width:200px; 
+  height:200px;
+  position: absolute;
+  top: 0;left: 0;
+}
+.left, .right {
+  width:200px; 
+  height:200px;
+  background:#00aacc;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.pie_right, .right {
+  clip:rect(0,auto,auto,100px);
+}
+.pie_left, .left {
+  clip:rect(0,100px,auto,0);
+}
+.mask {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  left: 25px;
+  top: 25px;
+  background: #FFF;
+  position: absolute;
+  text-align: center;
+  line-height: 150px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #00aacc;
+}
